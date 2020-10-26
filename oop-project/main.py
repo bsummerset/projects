@@ -1,3 +1,11 @@
+from subprocess import call
+import os
+def clear():
+    call("clear" if os.name == "posix" else 'cls')
+clear()
+
+
+
 from pet import Pet, CuddlyPet
 from toy import Toy
 
@@ -49,7 +57,7 @@ def main():
         choice = get_user_choice(main_menu)
         if choice == 1:
             pet_name = input("What would you like to name your pet?\n")
-            print("Please choose the type of pet:/n")
+            print("Please choose the type of pet:")
             type_choice = get_user_choice(adoption_menu)
             if type_choice == 1:
                 pets.append(Pet(pet_name))
