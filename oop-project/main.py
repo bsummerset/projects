@@ -1,12 +1,12 @@
 from pet import Pet, CuddlyPet
-#from toy import Toy
+from toy import Toy
 
 
 
-pets = []
+pets = [] #begin with no pets
 
-main_menu = [
-   "Adopt a Pet",
+main_menu = [     
+   "Adopt a Pet" ,
     "Play with Pet",
     "Feed Pet",
     "View status of pets",
