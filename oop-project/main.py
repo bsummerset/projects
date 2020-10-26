@@ -6,14 +6,14 @@ clear()
 
 
 
-from pet import Pet, CuddlyPet
+from pet import Pet, CuddlyPet # import classes Pet and Toy 
 from toy import Toy
 
 
 
 pets = [] #begin with no pets
 
-main_menu = [     
+main_menu = [     #list of choices within main menu7
    "Adopt a Pet" ,
     "Play with Pet",
     "Feed Pet",
